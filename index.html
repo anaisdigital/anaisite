@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anais.digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="astronaut.webp" class="floating-gif p1">
+    <img src="cat.gif" class="floating-gif p3">
+    <img src="colourbar.webp" class="floating-gif p5">
+    <img src="dragon.webp" class="floating-gif p6">
+    <img src="iss.webp" class="floating-gif p7">
+    <img src="tv.webp" class="floating-gif p10">
+    <img src="uk.webp" class="floating-gif p11">
+
+    <header>
+        <div id="data" class="data-display">0000-00-00</div>
+        <nav class="nav-container">
+            <a href="index.html" class="neu-button" title="Início">🏠</a>
+            <a href="projects.html" class="neu-button" title="Projetos">📂</a>
+            <a href="about.html" class="neu-button" title="Sobre Mim">👩‍🦰</a>
+        </nav>
+        <div id="relogio" class="digital-clock">00:00:00</div>
+    </header>
+
+    <main>
+        <section class="window-container">
+            <div class="title-bar">
+                <span class="window-title">Welcome Window</span>
+                <div class="window-controls">
+                    <button class="control-button">-</button>
+                    <button class="control-button">□</button>
+                    <button class="control-button close">X</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <h1>Hi, welcomeeee! 👋</h1>
+                <p>Welcome to my digital room on the World Wide Web 🛜</p>
+                <p>Feel free to explore, click around, and stay for a while. Enjoy!</p>
+            </div>
+        </section>
+
+        <div class="bottom-layout">
+            <div class="left-side">
+                <div class="window-container guestbook-window">
+                    <div class="title-bar"><span class="window-title">Leave a message! ✍️</span></div>
+                    <div class="window-content no-padding">
+                        <iframe 
+                            src="https://users.smartgb.com/g/g.php?a=s&i=g19-02786-02" 
+                            width="100%" 
+                            height="600px" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-side-stack">
+                <div class="ipod-body">
+                    <div class="ipod-screen">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/lWLNKSxvl1M?autoplay=1&mute=1&loop=1&playlist=lWLNKSxvl1M&controls=0&showinfo=0&modestbranding=1" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            style="border-radius: 6px;">
+                        </iframe>
+                    </div>
+                    <div class="click-wheel">
+                        <button class="wheel-button top">MENU</button>
+                        <button class="wheel-button left">⏪</button>
+                        <button class="wheel-button right">⏩</button>
+                        <button class="wheel-button bottom">⏯️</button>
+                        <div class="center-button"></div>
+                    </div>
+                </div>
+
+                <div class="stats-under-ipod">
+                    <p class="stats-text">VISITORS</p>
+                    <img src="counter.gif" alt="Contador" class="counter-gif">
+                    <p class="stats-sub">SINCE 1969</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
