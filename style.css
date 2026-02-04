@@ -277,3 +277,38 @@ main {
     max-width: 1000px; /* Mesma largura da Welcome Window do index */
     margin: 20px auto; /* Centraliza e dá um respiro no topo */
 }
+/* Estilo específico para o aviso de mobile */
+.mobile-alert {
+    display: none; /* Esconde no PC */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: 90% !important;
+    max-width: 350px;
+    text-align: center;
+    border: 3px solid #FF00FF; /* Um toque extra de agressividade kkk */
+}
+
+.mobile-alert h1 {
+    font-size: 2rem !important;
+}
+
+/* Media Query: Só mostra se a tela for pequena */
+/* Media Query atualizada: Sem fundo preto e com transparência */
+@media (max-width: 768px) {
+    .mobile-alert {
+        display: block;
+        /* Se quiser que a janela do aviso em si seja um pouco transparente: */
+        opacity: 0.95; 
+        backdrop-filter: blur(5px); /* Dá um efeito de vidro fosco no que está atrás */
+    }
+
+    /* Removemos o 'display: none' do resto para o site continuar visível atrás */
+    /* Mas se quiser que o site fique "congelado" ou levemente escurecido: */
+    body {
+        overflow: hidden; /* Impede o plebeu de dar scroll no site */
+        background-color: rgba(0, 0, 0, 0.4) !important; /* Deixa o site original no fundo, mas com uma sombra leve */
+    }
+}
